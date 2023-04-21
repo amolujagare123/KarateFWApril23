@@ -125,3 +125,13 @@ Feature: all scenarios related to job portal
    # And match response//jobDescription == 'To develop andriod application'
     And match response/List/item/jobTitle == 'Software Engg'
     And match response/List/item/experience/experience[2] == 'Apple'
+
+  Scenario: to view all the jobs check job description & print
+    Given path '/normal/webapi/all'
+    And header accept = 'application/json'
+    When method get
+    Then status 200
+    * def expectedJobDescription = 'To develop andriod application 1'
+    * def actualJobDescription = response[0].jobDescription
+    * print "actual=" + actualJobDescription + " expected=" + expectedJobDescription
+    And match actualJobDescription == expectedJobDescription

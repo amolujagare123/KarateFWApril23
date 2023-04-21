@@ -1,4 +1,4 @@
-package jobportal.jobportal;
+package jobportal;
 
 import com.intuit.karate.junit5.Karate;
 
@@ -9,6 +9,8 @@ public class JobPortalRunner {
     @Karate.Test
     Karate runJobPortal()
     {
-        return run("jobPortal").relativeTo(getClass());
+     //   return run("jobPortal").relativeTo(getClass());
+        return run("jobPortalVariableDemo")
+                .relativeTo(getClass());
     }
 }

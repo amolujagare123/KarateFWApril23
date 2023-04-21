@@ -19,7 +19,8 @@
         <dependency>
             <groupId>com.intuit.karate</groupId>
             <artifactId>karate-junit5</artifactId>
-            <version>${karate.version}</version>
+           <version>${karate.version}</version>
+          <!--  <version>LATEST</version>-->
             <scope>test</scope>
         </dependency>		
     </dependencies>

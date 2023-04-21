@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Job>
+    <experience>string</experience>
+    <jobDescription>string</jobDescription>
+    <jobId>1</jobId>
+    <jobTitle>string</jobTitle>
+    <project>
+        <projectName>string</projectName>
+        <technology>string</technology>
+    </project>
+</Job>
